@@ -43,6 +43,7 @@ namespace SampleApp
         public static void Main(string[] args)
         {
             var host = new WebHostBuilder()
+                .UseUrls("http://0.0.0.0:8080/")
                 .UseKestrel(options =>
                 {
                     // options.ThreadCount = 4;
